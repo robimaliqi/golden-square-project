@@ -14,12 +14,11 @@ _Include the name of the method, its parameters, return value, and side effects.
 
 ```ruby
 
-# We create a method that checks if a text includes the string #TODO
+task = todo_checker(text)
 
-tasks = string_checker(text)
+# text is the string that may contain a task
+# task is a boolean and lets us no true or false if the text includes the text #TODO
 
-# * text is a string ow words
-# * tasks confirms that it includes the string #TODO
 ```
 
 ## 3. Create Examples as Tests
@@ -27,16 +26,21 @@ tasks = string_checker(text)
 _Make a list of examples of what the method will take and return._
 
 ```ruby
+
 #1
-string_checker("")
-# => false
+todo_checker("")
+# => "No text entered"
 
 #2
-string_checker("#GRATITUDE today is going to be a great day")
-# => false
+todo_checker("#TODO brush my teeth")
+# => true
 
 #3
-string_checker("#TODO mediitate and yoga every morning")
+todo_checker("#GRATITUDE I have food")
+# => false
+
+#4
+todo_checker("#Todo brush my teeth")
 # => false
 
 ```
