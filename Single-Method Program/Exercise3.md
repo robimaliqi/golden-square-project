@@ -31,6 +31,15 @@ _Make a list of examples of what the method will take and return._
 string_checker("")
 # => false
 
+#2
+string_checker("#GRATITUDE today is going to be a great day")
+# => false
+
+#3
+string_checker("#TODO mediitate and yoga every morning")
+# => false
+
+```
 
 _Encode each example as a test. You can add to the above list as you go._
 
