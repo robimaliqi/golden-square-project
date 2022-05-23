@@ -80,3 +80,4 @@ RSpec.describe DiaryEntry do
     end
   end
 end 
+
