@@ -64,7 +64,7 @@ RSpec.describe 'integration' do
         expect(result).to eq diary_entry_1
       end
     end
-    context "where we just have one entry and it is unreeadable in the time" do 
+    context "where we just have one entry and it is unreadable in the time" do 
       it "returns nil" do 
         diary = Diary.new
         diary_entry_1 = DiaryEntry.new("my title", "my contents longer")
